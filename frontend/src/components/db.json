@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": "99a7",
+      "email": "22cs012@psr.edu.in",
+      "password": "Ravi"
+    },
+    {
+      "id": "ff11",
+      "email": "22cs055@psr.edu.in",
+      "password": "MARI"
+    },
+    {
+      "id": "a49e",
+      "email": "22cs055@psr.edu.in",
+      "password": "Maribai"
+    },
+    {
+      "id": "4b38",
+      "email": "admin@bbdm.in",
+      "password": "bbdm"
+    },
+    {
+      "id": "8eb0",
+      "email": "bala@gmail.com",
+      "password": "balravi"
+    },
+    {
+      "id": "9691",
+      "email": "admin@bbdm.in",
+      "password": "bbdm"
+    },
+    {
+      "id": "ae53",
+      "email": "admin@bbdm.in",
+      "password": "admin"
+    },
+    {
+      "id": "39bb",
+      "email": "mari@gmail.com",
+      "password": "mari"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "rollNo": "20BCS001",
+      "password": "20BCS001",
+      "name": "John Doe",
+      "email": "20BCS001@gmail.com",
+      "mobile": "1234567890",
+      "department": "CSE",
+      "progressMark": 85,
+      "year": 2024,
+      "eligible": 0
+    },
+    {
+      "id": "1",
+      "rollNo": "22CS001",
+      "password": "22CS001",
+      "name": "John ",
+      "email": "22CS001@gmail.com",
+      "mobile": "1234567890",
+      "department": "CSE",
+      "progressMark": 85,
+      "year": 2024,
+      "eligible": 1
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "companyName": "Google",
+      "jobRole": "Software Engineer",
+      "salary": "12 LPA",
+      "location": "Bangalore",
+      "poster": "google.png"
+    },
+    {
+      "id": "ad80",
+      "companyName": "TCS",
+      "visitDate": "2025-02-16",
+      "jobRole": "Software Developer",
+      "package": "4 LPA",
+      "eligibility": "No Backlogs",
+      "poster": "TCS-BPS-Recruitment-2023-1024x576.jpg"
+    }
+  ]
+}

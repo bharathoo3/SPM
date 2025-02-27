@@ -1,0 +1,500 @@
+/* Admin Dashboard Extended Styling */
+
+/* Body and Global Styles */
+
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f3d66;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-left .navbar-logo {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-right .btn-logout {
+    padding: 10px 20px;
+    background-color: #ff5c8d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-right .btn-logout:hover {
+    background-color: #ff4162;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 260px;
+    background-color: #3c4b76;
+    color: #fff;
+    padding: 20px 0;
+   
+    top: 188px;
+    left: 0;
+    bottom: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .tite{
+margin-left: 40px;
+margin-top: -100px;
+color: #e20c0c;
+
+  }
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 10px;
+  }
+  
+  .sidebar-item:hover {
+    transform: translateX(5px);
+    background-color: #5f6f99;
+  }
+  
+  .sidebar-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  /* Content Area Styling */
+  .contente {
+
+    margin-left: 0;
+    padding: 30px;
+    flex: 1;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #0a6fd3, #41ff87);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    place-items: center;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #box{
+  
+    margin-bottom: 500px;
+  }
+  /* Content Header */
+  .content-header {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2f3d66;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  /* Class Cards Styling */
+
+  .class-cards {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+  .class-cardss {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+  
+  .class-card {
+    background-color: #ffffff;
+    width: 220px;
+    height: 160px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .class-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .class-card span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  /* Class Cards Hover Effect */
+  .class-card:hover span {
+    color: #17b4f8;
+  }
+  
+  /* Sidebar Mobile Styling */
+  @media (max-width: 1024px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      position: relative;
+      height: auto;
+      box-shadow: none;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  
+    .class-cards {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: relative;
+    }
+  
+    .content {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .class-cards {
+      justify-content: center;
+    }
+  }
+  
+  /* Card Hover Effects */
+  .class-card:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar Mobile View */
+  @media (max-width: 600px) {
+    .navbar-left .navbar-logo {
+      font-size: 24px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar-item {
+      font-size: 16px;
+    }
+  
+    .class-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .class-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Scrollbar Styling for Content */
+  .content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .content::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  
+  /* Form and Button Styling */
+  button {
+    background-color: #17b4f8;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #10a6d8;
+  }
+  
+  button:active {
+    background-color: #0d8ca3;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  #tech-a{
+    width: 500px;
+ 
+  }
+  /* Table styling */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.student-table th, .student-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+}
+
+/* Button styles for eligibility */
+.student-table button {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.student-table button.eligible {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.student-table button.not-eligible {
+  background-color: #f44336;
+  color: white;
+}
+
+.student-table button:hover {
+  opacity: 0.8;
+}
+/* Search Bar */
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Table Styling */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.student-table th, .student-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+}
+
+/* Button styles for eligibility */
+.student-table button {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 5px;
+}
+
+/* Green tick button (eligible) */
+.student-table button.eligible {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Red cross button (not eligible) */
+.student-table button.not-eligible {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hover effect for buttons */
+.student-table button:hover {
+  opacity: 0.8;
+}
+.eligible {
+  background-color: #4CAF50;  /* Green background */
+  color: white;
+}
+
+.not-eligible {
+  background-color: #f44336;  /* Red background */
+  color: white;
+}
+/* Placement Form Container */
+.company-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+  width: 700px;
+  margin: 4rem auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Header */
+.company-form h2 {
+  font-size: 2rem;
+  color: #6c63ff;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+}
+
+/* Input Fields */
+.company-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.company-form input,
+.company-form textarea {
+  padding: 14px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.company-form input:focus,
+.company-form textarea:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 12px rgba(108, 99, 255, 0.3);
+}
+
+/* File Upload Styling */
+.company-form input[type="file"] {
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+/* Submit Button */
+.company-form button {
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #6c63ff, #574dff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.company-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(108, 99, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .company-form {
+    padding: 1.5rem;
+  }
+  
+  .company-form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-form {
+    padding: 1rem;
+  }
+  
+  .company-form h2 {
+    font-size: 1.5rem;
+  }
+  
+  .company-form input,
+  .company-form textarea {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,89 @@
+
+
+.content {
+    background-color: rgb(232, 0, 0);
+    width: 600px;
+    height: 250px;
+  
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: -4000px;
+}
+#one{
+    background: linear-gradient(135deg, #0a6fd3, #41ff87);
+    margin-left:150px;
+    margin-top: 20px;
+}
+.head h1 {
+    color: rgb(16, 16, 236);
+    margin-bottom: 30px;
+}
+
+.aten {
+    background: linear-gradient(135deg, #58e58c, #002d5a);
+    display: flex;
+    width: 1000px;
+    height: 550px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -40px;
+    margin-left: 90px;
+  
+}
+
+.aten button {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.stud {
+    background-color: rgb(218, 175, 31);
+}
+
+.teac {
+    background-color: rgb(6, 179, 248);
+}
+
+.admin {
+    background-color: rgb(15, 230, 15);
+}
+
+.stud:hover,
+.teac:hover,
+.admin:hover {
+    transform: translateY(-5px);
+    background-color: rgb(9, 228, 180);
+}
+
+.std {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.imge {
+    width: 600px;
+    height: 550px;
+    position: absolute;
+    top: 85%;
+    right: 15%;
+   
+}
+
+
+

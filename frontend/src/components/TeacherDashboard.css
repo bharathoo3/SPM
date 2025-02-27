@@ -1,0 +1,157 @@
+/* 🌟 General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📌 Main Dashboard Layout */
+.teacher-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  background: linear-gradient(135deg, #004080, #002d5a);
+  color: rgb(235, 234, 234);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #e6d115;
+}
+
+.logout-button {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background: #cc0000;
+}
+
+/* 📌 Dashboard Layout */
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 📌 Sidebar */
+.sidebar {
+  width: 250px;
+  background: #002d5a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: -3px;
+}
+
+.sidebar-item {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* 📌 Content Area */
+.content-area {
+  flex: 1;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 85vh;
+  border-radius: 10px;
+}
+
+/* 📌 Scrollable Student Progress Form */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top:-20px ;
+  margin-right: 20px;
+  height: 600px;
+  width: 1200px;
+  overflow-y: auto;
+  
+  border-radius: 10px;
+  background: #e5e5eb;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📝 Form Inputs */
+.content label {
+  font-weight: bold;
+  color: #004080;
+  font-size: 14px;
+}
+
+.content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.content input:focus {
+  border-color: #004080;
+  box-shadow: 0px 0px 5px rgba(0, 64, 128, 0.3);
+  outline: none;
+}
+
+/* 🔥 Submit Button (Sticky + Hover Effect) */
+button {
+  background: linear-gradient(135deg, #004080, #002d5a);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  position: sticky;
+  bottom: 10px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0055b8, #004080);
+  transform: scale(1.05);
+}

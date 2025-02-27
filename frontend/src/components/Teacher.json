@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": "1001",
+      "name": "Smith",
+      "phone": "13246798",
+      "email": "Smith@gmail.com",
+      "department": "CSE",
+      "role": "HOD",
+      "pass": "Smith",
+      "password": "Smith"
+    }
+  ]
+}

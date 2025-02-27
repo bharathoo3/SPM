@@ -1,0 +1,24 @@
+/* Mobile Navbar Toggler */
+.navbar-toggler {
+    display: none; /* Initially hidden */
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+    }
+  }
+  
